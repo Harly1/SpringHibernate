@@ -40,7 +40,7 @@ public class HibernetDAOImp implements DAO {
     }
     @Transactional
     public User getUserByLogin(String login) {
-        org.hibernate.query.Query query = sessionFactory.openSession().createQuery("FROM User WHERE login := param");
+        org.hibernate.query.Query query = sessionFactory.openSession().createQuery("FROM User WHERE login = :param");
         query.setParameter("param", login);
         return  (User) query.uniqueResult();
     }

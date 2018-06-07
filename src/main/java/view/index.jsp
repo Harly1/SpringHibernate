@@ -4,10 +4,10 @@
 
 <html>
 <head>
-    <title>Books Store Application</title>
+    <title>List of Users</title>
 </head>
 <body>
-<center>
+<%--<center>
     <h1>Users Management</h1>
     <h2>
         <a href="/admin/new">Add New User</a>
@@ -26,7 +26,7 @@
             <th>ROLE</th>
             <th>ACTIONS</th>
         </tr>
-        <c:forEach var="users" items="${listUser}">
+        <c:forEach var="users" items="${listUsers}">
             <tr>
                 <td><c:out value="${users.id}" /></td>
                 <td><c:out value="${users.name}" /></td>
@@ -40,6 +40,6 @@
             </tr>
         </c:forEach>
     </table>
-</div>
+</div>--%>
 </body>
 </html>

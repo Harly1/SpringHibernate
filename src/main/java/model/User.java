@@ -18,12 +18,28 @@ public class User {
     @Column(name = "role", unique = false)
     private String role;
 
-    public User(long id, String login, String password, String role) {
+    public long getId() {
+        return id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    /*public User(long id, String login, String password, String role) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.role = role;
-    }
+    }*/
 
 
 
